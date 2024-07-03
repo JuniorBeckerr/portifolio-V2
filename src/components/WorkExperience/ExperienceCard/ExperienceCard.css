@@ -41,6 +41,47 @@
   top: 0.35rem;
 }
 
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  border: 1px solid #6751b9;
+  border-radius: 0.65rem;
+  background-color: #2a2252;
+  overflow: hidden;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 227%;
+  height: 220%;
+  border: none;
+  transform: scale(0.45);
+  transform-origin: 0 0;
+}
+
+.iframe-container .blurred {
+  filter: blur(5px);
+  pointer-events: none;
+}
+
+.maintenance-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 1.5em;
+  z-index: 10;
+}
+
 @media (max-width: 768px) {
   .work-experience-card {
     margin: 0;

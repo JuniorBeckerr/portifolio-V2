@@ -79,7 +79,7 @@
   outline: 1.5px solid transparent;
   border-radius: 0.2rem;
   cursor: pointer;
-  transition: all 0.3 ease;
+  transition: all 0.3s ease;
 }
 
 .contact-btn:hover {
@@ -92,7 +92,6 @@
   width: 2.5rem;
   height: 2.5rem;
   font-size: 1.5rem;
-  display: flex;
   align-items: center;
   justify-content: center;
   border: none;
@@ -154,15 +153,17 @@
     padding: 0 2rem;
   }
 }
+.more-wrapper {
+  position: relative;
+}
 
 
 .hexagon {
   position: absolute;
-  top: 50%;
   left: 50%;
   width: 100px;
   height: 100px;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -70%);
   display: none;
 }
 
@@ -177,25 +178,55 @@
 
 .socialButton {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 40px;
   height: 40px;
   color: white;
   border: 2px solid #000;
   cursor: pointer;
   opacity: 0;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
-.socialButton span {
-  display: inline-block;
-  transform: rotate(45deg);
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
 }
+
+.visible {
+  opacity: 1;
+}
+.socialButton span {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-135deg);
+}
+
+.socialButton span a{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+
+}
+
+.socialButton span:hover {
+  transform: scale(1.6) rotate(-135deg);
+}
+
 
 #button1 { animation: fadeIn 0.1s ease forwards 0.1s; }
 #button2 { animation: fadeIn 0.15s ease forwards 0.2s; }
 #button3 { animation: fadeIn 0.2s ease forwards 0.3s; }
 #button4 { animation: fadeIn 0.25s ease forwards 0.4s; }
 
-#button1 { background-color: blue; top: 0; left: 50%; transform: translate(-50%, 0) rotate(-45deg); }
-#button2 { background-color: #ea4400; top: 50%; left: 0; transform: translate(0, -50%) rotate(-45deg); }
-#button3 { background-color: #be006b; top: 50%; left: 100%; transform: translate(-100%, -50%) rotate(-45deg); }
-#button4 { background-color: #ffffff; color: black; top: 100%; left: 50%; transform: translate(-50%, -100%) rotate(-45deg); }
+#button1 { background-color: rgba(0, 0, 255, 0.5); color: white; top: 0; left: 50%; transform: translate(-50%, 0) rotate(135deg); }
+#button2 { background-color: rgba(234, 68, 0, 0.5); top: 50%; left: 0; transform: translate(0, -50%) rotate(135deg); }
+#button3 { background-color: rgba(190, 0, 107, 0.5); top: 50%; left: 100%; transform: translate(-100%, -50%) rotate(135deg); }
+#button4 { background-color: rgba(255, 255, 255, 0.5); color: black; top: 100%; left: 50%; transform: translate(-50%, -100%) rotate(135deg); }

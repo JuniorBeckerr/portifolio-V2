@@ -46,40 +46,51 @@ export const SKILLS = [
 
 export const WORK_EXPERIENCE = [
   {
-    title: "xxx",
-    date: "xxx - Present",
+    title: "Jogo da Memoria",
+    date: "Out 2022",
     responsibilities: [
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-
+      "Jogo da memoria interativo desenvolvido com React, demonstrando manipulação de estados e componentes funcionais.",
+      "JS, React, CSS3, HTML5",
     ],
+    iframeSrc: "https://reactmemory-becker.netlify.app/",
+    block: false,
   },
   {
-    title: "xxx",
-    date: "xxx - Present",
+    title: "Controle de Chamados",
+    date: "Ago 2023",
     responsibilities: [
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "Portal de chamados com autenticação, permitindo cadastro, login e gerenciamento de chamados e empresas com funcionalidades CRUD.",
+      "JS, React, Firebase, CSS3, HTML5",
     ],
+    iframeSrc: "https://chamadosbecker.netlify.app/",
+    block: false,
   },
   {
-    title: "xxx",
-    date: "xxx - Present",
+    title: "GestaoBeleza",
+    date: "Mai 2024 - Present",
     responsibilities: [
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-      "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "Portal de gestão para salões de beleza e barbearias, permitindo agendamentos, emissão de relatórios, controle de gastos e agendamentos via bot WhatsApp.",
+      "PHP, Laravel, NodeJS, POO, MySQL, Filament",
+    ],
+    iframeSrc: "http://gestaobeleza-32a3d67b09d9.herokuapp.com/",
+    block: true,
+  },
+  {
+    title: "Em Construção",
+    date: "Present",
+    responsibilities: [
 
     ],
+    block: true,
+
+  },
+  {
+    title: "Em Construção",
+    date: "Present",
+    responsibilities: [
+
+    ],
+    block: true,
+
   },
 ];
