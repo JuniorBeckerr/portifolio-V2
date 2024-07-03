@@ -4,7 +4,7 @@ import "./MobileNav.css";
 const MobileNav = ({ isOpen, toggleMenu }) => {
 
   const handleScroll = (sectionId) => {
-    if(isOpen) toggleMenu();
+    if (isOpen) toggleMenu();
     document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
   };
 
@@ -18,46 +18,39 @@ const MobileNav = ({ isOpen, toggleMenu }) => {
 
           <ul>
             <li>
-              <a
+              <button
                   onClick={() => handleScroll("hero")}
                   className="menu-item"
-                  href="#"
-
               >
                 Home
-              </a>
+              </button>
             </li>
 
             <li>
-              <a
+              <button
                   onClick={() => handleScroll("skills")}
                   className="menu-item"
-                  href="#"
               >
                 Skills
-              </a>
+              </button>
             </li>
 
             <li>
-              <a
+              <button
                   onClick={() => handleScroll("work-exp")}
                   className="menu-item"
-                  href="#"
-
               >
                 Work Experience
-              </a>
+              </button>
             </li>
 
             <li>
-              <a
+              <button
                   onClick={() => handleScroll("contact")}
                   className="menu-item"
-                  href="#"
-
               >
                 Contact Me
-              </a>
+              </button>
             </li>
 
             <button className="contact-btn" onClick={() => {}}>
