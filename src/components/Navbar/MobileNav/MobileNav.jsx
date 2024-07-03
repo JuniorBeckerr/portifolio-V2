@@ -21,8 +21,8 @@ const MobileNav = ({ isOpen, toggleMenu }) => {
               <a
                   onClick={() => handleScroll("hero")}
                   className="menu-item"
-                  role="button"
-                  tabIndex="0"
+                  href="#"
+
               >
                 Home
               </a>
@@ -32,8 +32,7 @@ const MobileNav = ({ isOpen, toggleMenu }) => {
               <a
                   onClick={() => handleScroll("skills")}
                   className="menu-item"
-                  role="button"
-                  tabIndex="0"
+                  href="#"
               >
                 Skills
               </a>
@@ -43,8 +42,8 @@ const MobileNav = ({ isOpen, toggleMenu }) => {
               <a
                   onClick={() => handleScroll("work-exp")}
                   className="menu-item"
-                  role="button"
-                  tabIndex="0"
+                  href="#"
+
               >
                 Work Experience
               </a>
@@ -54,8 +53,8 @@ const MobileNav = ({ isOpen, toggleMenu }) => {
               <a
                   onClick={() => handleScroll("contact")}
                   className="menu-item"
-                  role="button"
-                  tabIndex="0"
+                  href="#"
+
               >
                 Contact Me
               </a>
